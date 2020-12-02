@@ -8,9 +8,9 @@ jobs:
       - checkout
       - run: npm run lint
   test:
-    steps:
     docker:
       - image: circleci/node:13.8.0
+    steps:
       - checkout
       - run: npm run test
   analyze:
